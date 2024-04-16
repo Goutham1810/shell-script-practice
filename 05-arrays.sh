@@ -1,8 +1,10 @@
 #!/bin/bash
 
-NAMES=("Goutham" "Suma" "Krishna" "Gupta")
+MOVIES=("RRR" "Garuda Vedgha" "Aaata")
 
-#print all the array elements
-echo "To Print all the items $NAMES"
 #print 1st item of array
-echo "To Print First element of the names..$NAMES[0]"
+echo "First Movie $MOVIES[0]"
+#print 2nd item of array
+echo "Second Movie $MOVIES[1]"
+#print all the array elements
+echo "To Print all the items $MOVIES[@]"
