@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAMES=("Goutham","Suma","Krishna","Gupta")
+NAMES=("Goutham" "Suma" "Krishna" "Gupta")
 
 #print all the array elements
 echo "To Print all the items $NAMES"
