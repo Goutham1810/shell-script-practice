@@ -2,5 +2,7 @@
 
 NAMES=("Goutham","Suma","Krishna","Gupta")
 
-#list all the arrays
+#print all the array elements
 echo $NAMES
+#print 1st item of array
+echo $NAMES[0]
