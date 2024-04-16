@@ -3,6 +3,6 @@
 NAMES=("Goutham","Suma","Krishna","Gupta")
 
 #print all the array elements
-echo $NAMES
+echo "To Print all the items $NAMES"
 #print 1st item of array
-echo ${NAMES[0]}
+echo "To Print First element of the names..$NAMES[0]"
