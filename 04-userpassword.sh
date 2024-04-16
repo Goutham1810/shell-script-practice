@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Please enter the username:"
-read USERNAME
+read -s USERNAME #s will hide typing information on console
 echo "Please enter the password:"
-read PASSWORD
+read -s PASSWORD
 echo $USERNAME "and" $PASSWORD;
