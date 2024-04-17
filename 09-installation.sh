@@ -25,4 +25,11 @@ exit 1;
 else
 echo "The installation of git is successful"
 fi
-
+dnf install $1 -y
+if [ $? -ne 0 ]
+then
+echo "The installation of git is failed"
+exit 1;
+else
+echo "The installation of git is successful"
+fi
