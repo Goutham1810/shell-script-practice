@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 #dnf install mysql -y
-if [USERID -ne 0]
+if [$USERID -ne 0]
 then
 echo "Please run this user from sudo user"
 else
