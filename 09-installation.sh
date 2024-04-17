@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=${id -u}
+USERID=$(id -u)
 #dnf install mysql -y
 if [USERID -ne 0]
 then
