@@ -9,19 +9,19 @@ VALIDATE()
 {
     if [ $1 -ne 0 ]
     then 
-        echo "$2.. Installation is failed.."
+        echo -e "\e[31m $2.. Installation is failed.."
         exit 1;
     else
-        echo "$2.. Installation is success.."
+        echo -e "\e[32m $2.. Installation is success.."
     fi    
 }
 
 if [ $USERID -ne 0 ]  
 then
-echo "Please run this user from sudo user"
+echo -e "\e[33m Please run this user from sudo user"
 exit 1; # To manually exit 
 else
-echo "You are good to execute the installation commands"
+echo -e "\e[32m You are good to execute the installation commands"
 fi
 dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "Mysql"
