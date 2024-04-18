@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [$USERID -eq 0]
+if [ $USERID -eq 0 ]
 then
 echo "Connected To Sudo User.."
 else
