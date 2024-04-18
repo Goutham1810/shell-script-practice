@@ -35,7 +35,7 @@ echo "Validating $i package"
 dnf list installed $i &>>$LOGFILE
 if [ $? -eq 0 ]
 then
-    echo "The $i packages are $G installed.. $N Hence we can ignore it.."
+    echo -e "The $i packages are $G installed..$N Hence we can ignore it.."
 else
     dnf install $i -y &>>$LOGFILE
     VALIDATE $? "Installation of $i $G"
