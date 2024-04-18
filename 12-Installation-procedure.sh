@@ -9,3 +9,8 @@ else
 echo "Sudo access is required to install the packages"
 exit 1;
 fi
+
+for i in $@
+do
+echo "Install the packages..";
+done
