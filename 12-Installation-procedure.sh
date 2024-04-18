@@ -22,4 +22,5 @@ then
     echo "The $i packages are installed.. Hence we can ignore it.."
 else
     echo "The $i package is not installed.."
+fi
 done
