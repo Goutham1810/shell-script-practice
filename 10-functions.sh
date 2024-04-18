@@ -4,7 +4,7 @@ USERID=$(id -u)
 
 VALIDATE()
 {
-    if [$? -ne o]
+    if [$? -ne 0]
     then 
         echo "$2.. Installation is failed.."
         exit 1;
