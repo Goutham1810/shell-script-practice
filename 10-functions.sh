@@ -1,6 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
+TIMESTAMP=$(date +%F-%H-%M-%S)
+SCRIPTNAME=echo $0 | cut -d "." -f1
+LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP
 
 VALIDATE()
 {
@@ -20,7 +23,7 @@ exit 1; # To manually exit
 else
 echo "You are good to execute the installation commands"
 fi
-dnf install mysql -y
+dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "Mysql"
-dnf install git -y
+dnf install git -y &>>$LOGFILE
 VALIDATE $? "Github"
