@@ -17,7 +17,7 @@ for i in $@
 do
 echo "Install the packages..$i"
 dnf list installed $i &>>$LOGFILE
-if [ $? -eq 0]
+if [ $? -eq 0 ]
 then
     echo "The $i packages are installed.. Hence we can ignore it.."
 else
