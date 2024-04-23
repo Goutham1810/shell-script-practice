@@ -1,8 +1,7 @@
 #!/bin/bash
 
-for i in {1..9}
+
+for i in {20240101..20240131}
 do
     echo $i
-    j=2024040
-    touch /tmp/app/$i.txt
 done
