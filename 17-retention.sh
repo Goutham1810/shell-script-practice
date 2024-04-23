@@ -18,7 +18,7 @@ fi
 
 FILES_LIST=$(find $DIRECTORY -name "*.log" -mtime +14)
 
-while IFS= read -r line
+while IFS= read -r line #IFS Internal Field Separator
 do
     echo "Deleting Files:"$line
     rm -rf $line
