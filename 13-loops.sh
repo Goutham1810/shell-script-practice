@@ -4,5 +4,5 @@ for i in {1..9}
 do
     echo $i
     j=2024040
-    touch -d /tmp/app/$i.txt
+    touch /tmp/app/$i.txt
 done
