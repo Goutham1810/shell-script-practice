@@ -21,5 +21,5 @@ FILES_LIST=$(find $DIRECTORY -name "*.log" -mtime +14)
 while IFS= read -r line
 do
     echo "Deleting Files:"$line
-    #rm -rf $line
+    rm -rf $line
 done <<< $FILES_LIST
