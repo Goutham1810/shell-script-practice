@@ -1,11 +1,12 @@
 #!/bin/bash
 
-NAME="This is Goutham"
+COURSE="DevOps from Current Script"
 
-echo "Calling From Current Script $NAME"
-echo "The process ID $$"
+echo "Before calling other script, course: $COURSE"
+echo "Process ID of current shell script: $$"
 
 ./15-other-script.sh
 
-echo "Calling From Other Script $NAME"
-echo "The process ID $$"
+#source ./16-other-script.sh
+
+echo "After calling other script, course: $COURSE"

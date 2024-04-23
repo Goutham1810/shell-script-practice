@@ -1,5 +1,6 @@
 #!/bin/bash
 
-NAME="This is Somu Sundara Goutham"
+COURSE="DevOps from Other Script"
 
-echo "Calling From Other Script $NAME"
+echo "Variable value from Other script: $COURSE"
+echo "Process ID of other script: $$"
