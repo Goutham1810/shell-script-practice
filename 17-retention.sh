@@ -6,7 +6,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [-d $DIRECTORY]
+if [ -d $DIRECTORY ]
 then
     echo "Directory exists.."
 else
