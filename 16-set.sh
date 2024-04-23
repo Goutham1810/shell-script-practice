@@ -9,5 +9,5 @@ error_handling()
 trap 'error_handling ${LINENO} "$BASH_COMMAND"' ERR
 
 USERID=$(id -u)
-dnf install mysqll -y
+dnf install mysql -y
 dnf install git -y
