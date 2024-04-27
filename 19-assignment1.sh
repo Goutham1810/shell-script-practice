@@ -10,4 +10,4 @@ do
     total_line+=echo $line | awk -F "\n" '{print $f}'
 done < $filename
 
-echo $total_line
+echo -e "Total Lines..$total_line"
