@@ -7,5 +7,6 @@ filename="/home/ec2-user/shell-script-practice/sample.txt"
 read -p $filename
 while IFS= read -r line
 do
-    echo $line | wc
+    echo $line | words
+
 done < $filename
