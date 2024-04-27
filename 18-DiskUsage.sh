@@ -1,6 +1,7 @@
 #!/bin/bash
 DISK_USAGE=$(df -h)
 DISK_THRES=75
+MESSAGE=""
 
 while IFS= read -r line
 do
