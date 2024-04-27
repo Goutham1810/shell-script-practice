@@ -1,6 +1,6 @@
 #!/bin/bash
 DISK_USAGE=$(df -h | grep boot)
-DISK_THRES=75
+DISK_THRES=5
 MESSAGE=""
 
 while IFS= read -r line
