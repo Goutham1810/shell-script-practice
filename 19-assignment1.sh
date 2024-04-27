@@ -5,7 +5,7 @@ filename="/home/ec2-user/shell-script-practice/sample.txt"
 #filecontent="Hi, this is goutham Currently working in SCB SCB is my second company holding an position of Data Engineer I want to move as Devops Engineer."
 
 read -p $filename
-while read line
+while IFS= read -r line
 do
-    echo $line
+    lines=$(echo $line | cut -d "\n" -f1)
 done < $filename
