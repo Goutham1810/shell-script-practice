@@ -7,5 +7,5 @@ filename="/home/ec2-user/shell-script-practice/sample.txt"
 read -p $filename
 while IFS= read -r line
 do
-    lines=$(echo $line | cut -d "\n" -f1)
+    echo $line | wc
 done < $filename
