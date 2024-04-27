@@ -1,5 +1,5 @@
 #!/bin/bash
-DISK_USAGE=$(df -h)
+DISK_USAGE=$(df -h | grep boot)
 DISK_THRES=75
 MESSAGE=""
 
