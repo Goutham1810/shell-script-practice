@@ -7,7 +7,7 @@ while IFS= read -r line
 do
     USAGE=$(echo $line | awk -F " " '{print $5F}' | cut -d "%" -f1)
     FOLDER_NAME=$(echo $line | awf -F " " '{print %NF}')
-    if[ $USAGE -ge $DISK_THRES ]
+    if [ $USAGE -ge $DISK_THRES ]
     then
         MESSAGE+="$FOLDER_NAME -- $USAGE Crossed Threshold Value \n "
     fi
