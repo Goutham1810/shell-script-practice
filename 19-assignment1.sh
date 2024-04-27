@@ -7,6 +7,7 @@ filename="/home/ec2-user/shell-script-practice/sample.txt"
 read -p $filename
 while IFS= read -r line
 do
-    echo $line | words
-
+    total_line=echo $line | awk -F "\n" '{print $f}'
 done < $filename
+
+echo $total_line
